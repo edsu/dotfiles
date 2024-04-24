@@ -1,0 +1,20 @@
+[user]
+	email = ehs@pobox.com
+	name = Ed Summers
+	signingkey = D012FF557AFFF80A
+[core]
+	excludesfile = /Users/edsummers/.gitignore
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = main
+[interactive]
+	diffFilter = diff-so-fancy --patch
+[commit]
+	gpgsign = true
+[pull]
+	rebase = true

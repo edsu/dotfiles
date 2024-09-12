@@ -3,7 +3,7 @@
     name = Ed Summers
     signingkey = D012FF557AFFF80A
 [core]
-    excludesfile = /Users/edsummers/.gitignore
+    excludesfile = /Users/edsu/.gitignore
     pager = delta
 [filter "lfs"]
     clean = git-lfs clean -- %f

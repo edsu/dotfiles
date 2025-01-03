@@ -23,9 +23,9 @@
     # delta detects terminal colors automatically; set one of these to disable auto-detection
     # dark = true
     # light = true
+    colorMoved = default
+    side-by-side = true
+    line-numbers = true
 
 [merge]
     conflictstyle = diff3
-
-[diff]
-    colorMoved = default

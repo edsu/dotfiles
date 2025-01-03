@@ -109,3 +109,20 @@ export VAULT_ADDR=https://vault.sul.stanford.edu
 alias vi=nvim
 alias bx="bundle exec"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+eval "$(nodenv init - zsh)"
+eval "$(rbenv init - zsh)"
+eval "$(pyenv init - zsh)"
+eval "$(zoxide init zsh)"
+
+. "$HOME/.cargo/env"
+
+# postgresql app
+export PATH=/Applications/Postgres.app/Contents/Versions/17/bin:$PATH
+export LD_LIBRARY_PATH=/Applications/Postgres.app/Contents/Versions/17/lib:$LD_LIBRARY_PATH
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
+# golang
+export PATH=$HOME/go/bin:$PATH

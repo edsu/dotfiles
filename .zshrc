@@ -109,6 +109,7 @@ export VAULT_ADDR=https://vault.sul.stanford.edu
 alias vi=nvim
 alias bx="bundle exec"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias rnd="python -m random --integer"
 
 eval "$(nodenv init - zsh)"
 eval "$(rbenv init - zsh)"

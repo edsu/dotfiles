@@ -122,8 +122,13 @@ eval "$(zoxide init zsh)"
 export PATH=/Applications/Postgres.app/Contents/Versions/17/bin:$PATH
 export LD_LIBRARY_PATH=/Applications/Postgres.app/Contents/Versions/17/lib:$LD_LIBRARY_PATH
 
-autoload -U +X bashcompinit && bashcompinit
+# terraform autocompletion
+autoload -U +X compinit && compinit
 complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
 
 # golang
 export PATH=$HOME/go/bin:$PATH
+
+# jj
+source <(jj util completion zsh)

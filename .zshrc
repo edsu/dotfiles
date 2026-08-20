@@ -107,13 +107,12 @@ export REMARKABLE_HOST=remarkable
 export VAULT_ADDR=https://vault.sul.stanford.edu
 
 alias vi=nvim
+alias python=python3
 alias bx="bundle exec"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias rnd="python -m random --integer"
 
-eval "$(nodenv init - zsh)"
-eval "$(rbenv init - zsh)"
-eval "$(pyenv init - zsh)"
+eval "$(mise activate zsh)"
 eval "$(zoxide init zsh)"
 
 . "$HOME/.cargo/env"
@@ -132,3 +131,8 @@ export PATH=$HOME/go/bin:$PATH
 
 # jj
 source <(jj util completion zsh)
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/edsu/.lmstudio/bin"
+# End of LM Studio CLI section
+

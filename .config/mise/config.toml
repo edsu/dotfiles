@@ -1,0 +1,11 @@
+[tools]
+"gem:ruby-lsp" = "0.26.10"
+node = "latest"
+"npm:typescript-language-server" = "latest"
+"npm:yarn" = "latest"
+poetry = "latest"
+python = "latest"
+ruby = "3.4"
+ruff = "latest"
+ty = "latest"
+uv = "latest"

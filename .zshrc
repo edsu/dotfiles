@@ -111,6 +111,7 @@ alias python=python3
 alias bx="bundle exec"
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias rnd="python -m random --integer"
+alias oc=opencode
 
 eval "$(mise activate zsh)"
 eval "$(zoxide init zsh)"
